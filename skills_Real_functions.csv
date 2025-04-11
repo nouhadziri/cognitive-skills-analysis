@@ -1,0 +1,94 @@
+Skill,Count,Percentage,Definition,Evidence,Math Example
+Application of Domain,2,4.25531914893617,The ability to application of domain in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Recognition of Mathematical Structures,1,2.127659574468085,The ability to recognition of mathematical structures in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Theorem Application Attempts,1,2.127659574468085,Identifying and attempting to apply relevant mathematical theorems to solve the problem.,"- ""We cannot directly apply Rolle's theorem as the right side is not constant.""
+- ""By Cauchy's Mean Value Theorem, $\frac{f(b)-f(a)}{h(b)-h(a)} = f'(\xi)/h'(\xi)$""
+- Multiple attempts to set up conditions for the Mean Value Theorem or Rolle's Theorem","Function  $f: [a,b]\to\mathbb{R}$ ,  $0<a<b$  is continuous on  $[a,b]$  and differentiable on  $(a,b)$ . Prove that there exists  $c\in(a,b)$  such that  \[ f'(c)=\frac1{a-c}+\frac1{b-c}+\frac1{a+b}...."
+Boundary Value Analysis,1,2.127659574468085,The ability to boundary value analysis in mathematical problem-solving.,No evidence provided.,"Let  $f:[-\pi/2,\pi/2]\to\mathbb{R}$  be a twice differentiable function which satisfies \[\left(f''(x)-f(x)\right)\cdot\tan(x)+2f'(x)\geqslant 1,\]for all  $x\in(-\pi/2,\pi/2)$ . Prove that \[\int_{-..."
+Transformation of Problem Representation,1,2.127659574468085,Converting a problem from one mathematical form to another that is more tractable or familiar.,"The solver transforms the integral equations into differential equations:
+```
+$x(t) = 1 + \int_0^t e^{-2(t-s)}x(s)ds$
+$x(t) = 1 + e^{-2t} \int_0^t e^{2s}x(s)ds$
+Multiply by $e^{2t}$:
+$e^{2t}x(t) = e^{2t} + \int_0^t e^{2s}x(s)ds$
+Differentiate both sides with respect to t:
+$2e^{2t}x(t) + e^{2t}x'(t) = 2e^{2t} + e^{2t}x(t)$
+```","Find continuous functions  $x(t),\ y(t)$  such that"
+Pattern Recognition and Application of Standard Methods,1,2.127659574468085,Identifying that a problem fits a known pattern and applying the appropriate solution technique.,"After deriving the differential equation, the solver immediately recognizes it as a first-order linear differential equation and applies the integrating factor method:
+```
+$x'(t) + x(t) = 2$
+Integrating factor is $e^{\int 1 dt} = e^t$.","Find continuous functions  $x(t),\ y(t)$  such that"
+Strategic Algebraic Manipulation,1,2.127659574468085,Performing algebraic operations in a purposeful sequence to simplify or transform expressions.,"Throughout the solution, the solver performs strategic manipulations:
+```
+Multiply by $e^{2t}$:
+$e^{2t}x(t) = e^{2t} + \int_0^t e^{2s}x(s)ds$
+```
+And later:
+```
+$e^t x'(t) + e^t x(t) = 2e^t$
+$\frac{d}{dt}(e^t x(t)) = 2e^t$
+```","Find continuous functions  $x(t),\ y(t)$  such that"
+Boundary Condition Analysis,1,2.127659574468085,Identifying and applying initial or boundary conditions to determine specific solutions from general solution forms.,"The solver uses the initial conditions derived from the original integral equations:
+```
+Use the initial condition from the integral equation:
+$x(0) = 1 + \int_0^0 e^{-2(0-s)}x(s)ds = 1 + 0 = 1$
+$x(0) = 2 + Ce^{-0} = 2 + C = 1$
+$C = 1 - 2 = -1$
+```","Find continuous functions  $x(t),\ y(t)$  such that"
+Sequential Problem Decomposition,1,2.127659574468085,Breaking a complex problem into a sequence of simpler sub-problems that can be solved one after another.,"The solver first completely solves for x(t), then uses that solution to solve for y(t):
+```
+So, $x(t) = 2 - e^{-t}$.","Find continuous functions  $x(t),\ y(t)$  such that"
+Function Construction and Transformation,1,2.127659574468085,Creating auxiliary functions by modifying the original function to make the problem more tractable.,"The solver repeatedly attempts to construct various functions:
+- ""Let $g(x) = f(x) - (\ln(c-a) + \ln(c-b) + \frac{x}{a+b})$""
+- ""Let $g(x) = f(x) - \ln|x-a| - \ln|x-b| - \frac{x}{a+b}$""
+- ""Let $h(x) = (x-a)(b-x) e^{-f(x)}$""
+- ""Consider $g(x) = f(x)(a-x)(b-x)$""","Function  $f: [a,b]\to\mathbb{R}$ ,  $0<a<b$  is continuous on  $[a,b]$  and differentiable on  $(a,b)$ . Prove that there exists  $c\in(a,b)$  such that  \[ f'(c)=\frac1{a-c}+\frac1{b-c}+\frac1{a+b}...."
+Derivative Calculation and Analysis,1,2.127659574468085,Computing derivatives of complex expressions and analyzing their structure to identify patterns or relationships.,"Throughout the trajectory, the solver computes numerous derivatives:
+- ""$k'(x) = \frac{b-x-(x-a)}{(x-a)(b-x)} = \frac{a+b-2x}{(x-a)(b-x)}$""
+- ""$g'(x) = f'(x) + \frac{1}{x-a} - \frac{1}{b-x} - \frac{1}{a+b}$""
+- ""$h'(x) = f'(x)(a-x)(b-x) + f(x)(-(b-x) - (a-x)) = f'(x)(a-x)(b-x) - f(x)(a+b-2x)$""","Function  $f: [a,b]\to\mathbb{R}$ ,  $0<a<b$  is continuous on  $[a,b]$  and differentiable on  $(a,b)$ . Prove that there exists  $c\in(a,b)$  such that  \[ f'(c)=\frac1{a-c}+\frac1{b-c}+\frac1{a+b}...."
+Pattern Recognition and Algebraic Manipulation,1,2.127659574468085,The ability to pattern recognition and algebraic manipulation in mathematical problem-solving.,No evidence provided.,Let $z$ be a complex number such that $z^{23} = 1$ and $z \neq 1.$  Find
+Domain Analysis,1,2.127659574468085,Carefully considering the domains of functions to ensure mathematical validity.,"- ""On $(a,b)$, $|a-x| = x-a$ and $|b-x| = b-x$""
+- ""Let $g(x) = f(x) + \ln(a-x) + \ln(b-x
+
+Identified Skills:","Function  $f: [a,b]\to\mathbb{R}$ ,  $0<a<b$  is continuous on  $[a,b]$  and differentiable on  $(a,b)$ . Prove that there exists  $c\in(a,b)$  such that  \[ f'(c)=\frac1{a-c}+\frac1{b-c}+\frac1{a+b}...."
+Pattern Recognition in Derivatives,1,2.127659574468085,The ability to pattern recognition in derivatives in mathematical problem-solving.,No evidence provided.,"Let  $f:[-\pi/2,\pi/2]\to\mathbb{R}$  be a twice differentiable function which satisfies \[\left(f''(x)-f(x)\right)\cdot\tan(x)+2f'(x)\geqslant 1,\]for all  $x\in(-\pi/2,\pi/2)$ . Prove that \[\int_{-..."
+Problem Reformulation and Representation,1,2.127659574468085,The ability to problem reformulation and representation in mathematical problem-solving.,No evidence provided.,"Find the number of permutations of $1, 2, 3, 4, 5, 6$ such that for each $k$ with $1$ $\leq$ $k$ $\leq$ $5$ , at least one of the first $k$ terms of the permutation is greater than $k$ ."
+Domain Constraint Analysis,1,2.127659574468085,The ability to domain constraint analysis in mathematical problem-solving.,No evidence provided.,"Let  $f:[0,1]\to\mathbb R$  be a continuous function such that  $f(0)=f(1)=0$ . Prove that the set  $$ A:=\{h\in[0,1]:f(x+h)=f(x)\text{ for some }x\in[0,1]\} $$  is Lebesgue measureable and has Lebesg..."
+Case Decomposition and Analysis,1,2.127659574468085,The ability to case decomposition and analysis in mathematical problem-solving.,No evidence provided.,"Let  $f:[0,1]\to\mathbb R$  be a continuous function such that  $f(0)=f(1)=0$ . Prove that the set  $$ A:=\{h\in[0,1]:f(x+h)=f(x)\text{ for some }x\in[0,1]\} $$  is Lebesgue measureable and has Lebesg..."
+Variable Transformation and Substitution,1,2.127659574468085,The ability to variable transformation and substitution in mathematical problem-solving.,No evidence provided.,"Let  $f:[0,1]\to\mathbb R$  be a continuous function such that  $f(0)=f(1)=0$ . Prove that the set  $$ A:=\{h\in[0,1]:f(x+h)=f(x)\text{ for some }x\in[0,1]\} $$  is Lebesgue measureable and has Lebesg..."
+Equation Manipulation and Transformation,1,2.127659574468085,The ability to equation manipulation and transformation in mathematical problem-solving.,No evidence provided.,"Let  $\mathcal F$  be the set of functions  $f(x,y)$  that are twice continuously differentiable for  $x\geq 1$ ,  $y\geq 1$  and that satisfy the following two equations (where subscripts denote part..."
+Pattern Recognition and Structural Analysis,1,2.127659574468085,"The ability to identify common patterns, structures, or forms across different elements of a problem.","The solver immediately recognizes the similar structure across all three equations:
+> ""The equations have a similar structure.""
+> ""Consider the general form $\sqrt{a(b-c)} + \sqrt{c(b-a)}$.""
+
+The solver also recognizes that all three equations can be approached using the same trigonometric substitution method.","Let $x,$ $y,$ and $z$ be positive real numbers satisfying the system of equations: \begin{align*} \sqrt{2x-xy} + \sqrt{2y-xy} &= 1 \\ \sqrt{2y-yz} + \sqrt{2z-yz} &= \sqrt2 \\ \sqrt{2z-zx} + \sqrt{2x-z..."
+Strategic Use of the Mean Value Theorem,1,2.127659574468085,The ability to strategic use of the mean value theorem in mathematical problem-solving.,No evidence provided.,"Let  $\mathcal F$  be the set of functions  $f(x,y)$  that are twice continuously differentiable for  $x\geq 1$ ,  $y\geq 1$  and that satisfy the following two equations (where subscripts denote part..."
+Differential Operator Formulation,1,2.127659574468085,The ability to differential operator formulation in mathematical problem-solving.,No evidence provided.,"Let  $\mathcal F$  be the set of functions  $f(x,y)$  that are twice continuously differentiable for  $x\geq 1$ ,  $y\geq 1$  and that satisfy the following two equations (where subscripts denote part..."
+Strategic Transformation of Expressions,1,2.127659574468085,The ability to strategic transformation of expressions in mathematical problem-solving.,No evidence provided.,"Let  $f:[-\pi/2,\pi/2]\to\mathbb{R}$  be a twice differentiable function which satisfies \[\left(f''(x)-f(x)\right)\cdot\tan(x)+2f'(x)\geqslant 1,\]for all  $x\in(-\pi/2,\pi/2)$ . Prove that \[\int_{-..."
+Integration by Parts Application,1,2.127659574468085,The ability to integration by parts application in mathematical problem-solving.,No evidence provided.,"Let  $f:[-\pi/2,\pi/2]\to\mathbb{R}$  be a twice differentiable function which satisfies \[\left(f''(x)-f(x)\right)\cdot\tan(x)+2f'(x)\geqslant 1,\]for all  $x\in(-\pi/2,\pi/2)$ . Prove that \[\int_{-..."
+Strategic Selection of Problem,1,2.127659574468085,The ability to strategic selection of problem in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Parameter Condition Analysis,1,2.127659574468085,The ability to parameter condition analysis in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+Algebraic Manipulation,1,2.127659574468085,Transforming mathematical expressions using algebraic rules to reach more useful forms.,"> ""Using cot x = cos x/sin x and log 1/x = -log x:""
+> ""D₂ = log₍ₑ₎(4/π) (cos²(θ+π/4)/sin(θ+π/4) - sin²(θ-π/4)/cos(θ-π/4))""","Let $|M|$ denote the determinant of a square matrix $M$. Let $g:\left[0, \frac{\pi}{2}\right] \rightarrow \mathbb{R}$ be the function defined by"
+Inverse Reasoning,1,2.127659574468085,The ability to inverse reasoning in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Solution Verification,1,2.127659574468085,The ability to solution verification in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Integration Technique Selection,1,2.127659574468085,The ability to integration technique selection in mathematical problem-solving.,No evidence provided.,Find the continuous function  $f(x)$  such that the following equation holds  for any real number  $x$ .
+Mathematical Modeling,1,2.127659574468085,The ability to mathematical modeling in mathematical problem-solving.,No evidence provided.,1.2.2. A process called free convection occurs when the air density increases with altitude. At which values of $\Lambda$ does the free convection occur?
+Analytical Problem Decomposition,1,2.127659574468085,The ability to analytical problem decomposition in mathematical problem-solving.,No evidence provided.,"Assume the Black-Scholes framework. For $t \ge 0$, let $S(t)$ be the time-$t$ price of a nondividend-paying stock. You are given:"
+Mathematical Transformation Skills,1,2.127659574468085,The ability to mathematical transformation skills in mathematical problem-solving.,No evidence provided.,"Assume the Black-Scholes framework. For $t \ge 0$, let $S(t)$ be the time-$t$ price of a nondividend-paying stock. You are given:"
+Probabilistic Reasoning,1,2.127659574468085,The ability to probabilistic reasoning in mathematical problem-solving.,No evidence provided.,"FemtoPravis is walking on an $8 \times 8$ chessboard that wraps around at its edges (so squares on the left edge of the chessboard are adjacent to squares on the right edge, and similarly for the top ..."
+Equation Solving,1,2.127659574468085,The ability to equation solving in mathematical problem-solving.,No evidence provided.,"Assume the Black-Scholes framework. For $t \ge 0$, let $S(t)$ be the time-$t$ price of a nondividend-paying stock. You are given:"
+Systematic Case Analysis,1,2.127659574468085,Breaking down a problem into distinct cases and methodically analyzing each one.,"- ""Since $x>0$ and $m_2$ is an integer, $x$ must be a positive divisor of 5. So $x \in \{1, 5\}$.""
+- ""Case 1: $x=1$... Case 2: $x=5$...""
+- Later, the solver systematically tests different values of $b_2$ (0 and 1) to find valid solutions.","Consider the additive group  $\mathbb{Z}^{2}$ . Let  $H$  be the smallest subgroup containing  $(3,8), (4,-1)$  and  $(5,4)$ ."
+Solution Verification through Direct Substitution,1,2.127659574468085,The ability to solution verification through direct substitution in mathematical problem-solving.,No evidence provided.,Let H be a Hilbert space over the field of real numbers  $\Bbb R$ . Find all  $f: H \to \Bbb R$  continuous functions for which  $$ f(x + y + \pi z) + f(x + \sqrt{2} z) + f(y + \sqrt{2} z) + f (\pi z)...
+Function Transformation and Simplification,1,2.127659574468085,The ability to function transformation and simplification in mathematical problem-solving.,No evidence provided.,Let H be a Hilbert space over the field of real numbers  $\Bbb R$ . Find all  $f: H \to \Bbb R$  continuous functions for which  $$ f(x + y + \pi z) + f(x + \sqrt{2} z) + f(y + \sqrt{2} z) + f (\pi z)...
+Pattern Recognition in Algebraic Structures,1,2.127659574468085,The ability to pattern recognition in algebraic structures in mathematical problem-solving.,No evidence provided.,Let H be a Hilbert space over the field of real numbers  $\Bbb R$ . Find all  $f: H \to \Bbb R$  continuous functions for which  $$ f(x + y + \pi z) + f(x + \sqrt{2} z) + f(y + \sqrt{2} z) + f (\pi z)...
+Coefficient Comparison,1,2.127659574468085,The ability to coefficient comparison in mathematical problem-solving.,No evidence provided.,Let H be a Hilbert space over the field of real numbers  $\Bbb R$ . Find all  $f: H \to \Bbb R$  continuous functions for which  $$ f(x + y + \pi z) + f(x + \sqrt{2} z) + f(y + \sqrt{2} z) + f (\pi z)...
+Algebraic Transformation and Manipulation,1,2.127659574468085,The ability to algebraic transformation and manipulation in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+Pattern Recognition and Function Form Identification,1,2.127659574468085,The ability to pattern recognition and function form identification in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+Definite Integral Evaluation,1,2.127659574468085,The ability to definite integral evaluation in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+System of Equations Analysis,1,2.127659574468085,The ability to system of equations analysis in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+Strategic Problem Reformulation,1,2.127659574468085,The ability to strategic problem reformulation in mathematical problem-solving.,No evidence provided.,"Find the condition of  $a,b$  for which the function  $f(x)\ (0\leq x\leq 2\pi)$  satisfying the following equality can be determined uniquely,then determine  $f(x)$ , assuming that  $f(x) $  is a con..."
+Change of Variables Strategy,1,2.127659574468085,The ability to change of variables strategy in mathematical problem-solving.,No evidence provided.,"Let  $\mathcal F$  be the set of functions  $f(x,y)$  that are twice continuously differentiable for  $x\geq 1$ ,  $y\geq 1$  and that satisfy the following two equations (where subscripts denote part..."

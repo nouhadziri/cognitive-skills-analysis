@@ -1,0 +1,97 @@
+Skill,Count,Percentage,Definition,Evidence,Math Example
+Symbolic Manipulation,12,8.88888888888889,The ability to symbolic manipulation in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Logical Deduction,12,8.88888888888889,The ability to logical deduction in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Verification,11,8.148148148148149,The ability to verification in mathematical problem-solving.,"The solver checks intermediate results to ensure correctness:
+> ""Let's check if the probabilities sum to 1: P(X=0) + P(X=1) + P(X=2) + P(X=3) = 3/28 + 10/28 + 11/28 + 4/28 = 28/28 = 1""
+> ""Let's double-check the calculations.""","Jackie and Phil have two fair coins and a third coin that comes up heads with probability $\frac47$ . Jackie flips the three coins, and then Phil flips the three coins. Let $\frac {m}{n}$ be the proba..."
+Subgoal Setting,10,7.4074074074074066,The ability to subgoal setting in mathematical problem-solving.,The solver breaks down the main problem into smaller objectives.,"Anna and Berta play a game in which they take turns in removing marbles from a table. Anna takes the first turn. When at the beginning of the turn there are  $n\geq 1$  marbles on the table, then the ..."
+Case Analysis,9,6.666666666666667,The ability to case analysis in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Abstraction,8,5.9259259259259265,The ability to abstraction in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Pattern Recognition,8,5.9259259259259265,The ability to pattern recognition in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Algorithmic Thinking,7,5.185185185185185,The ability to algorithmic thinking in mathematical problem-solving.,No evidence provided.,Find the number of distinct numbers in the list
+Forward Chaining,5,3.7037037037037033,The ability to forward chaining in mathematical problem-solving.,"The solver works from the given information (coin probabilities) toward the goal (probability of equal heads):
+> ""The problem asks for the probability that Jackie and Phil get the same number of heads when each flips three coins...""
+> [Proceeds through calculations to reach] ""The probability is 123/392.""","Jackie and Phil have two fair coins and a third coin that comes up heads with probability $\frac47$ . Jackie flips the three coins, and then Phil flips the three coins. Let $\frac {m}{n}$ be the proba..."
+Backtracking,3,2.2222222222222223,The ability to backtracking in mathematical problem-solving.,"The solver abandons approaches that prove impractical:
+- After calculating ""$3^{1.414214} = \sqrt[1000000]{3^{1414214}}$"", they note ""This is not practical.""
+- ""Let's use the fact that $a^x \approx a^p (1 + (x-p) \ln a)$. But we don't have $\ln a$."" (abandons this approach)
+- Tries multiple approaches to decompose the exponent before settling on the decimal expansion method","A simple calculator is given to you. (It contains 8 digits and only does the operations +,-,*,/, $ \sqrt{\mbox{}}$ ) How can you find  $ 3^{\sqrt{2}}$  with accuracy of 6 digits."
+Visual Representation,2,1.4814814814814816,The ability to visual representation in mathematical problem-solving.,"Though not explicitly shown, the solver clearly creates a mental model:
+- References to ""upper trapezoid"" and ""lower trapezoid""
+- Discussion of heights, bases, and parallel segments
+
+## Primary Cognitive Skills Summary (Ranked by Importance)
+
+1. **Symbolic Manipulation** - The most essential skill demonstrated, as the entire solution depends on setting up and solving algebraic equations representing geometric relationships.",One base of a trapezoid is $100$ units longer than the other base. The segment that joins the midpoints of the legs divides the trapezoid into two regions whose areas are in the ratio $2: 3$ . Let $x$...
+Backward Chaining,2,1.4814814814814816,The ability to backward chaining in mathematical problem-solving.,The solver starts with the goal (finding the sum of f(σ)) and works backward to identify what needs to be calculated (the sum of cycles).,"For a permutation $\sigma$ of $1,2, \ldots, 7$, a transposition is a swapping of two elements. Let $f(\sigma)$ be the minimum number of transpositions necessary to turn $\sigma$ into the permutation $..."
+Hypothesis Testing,2,1.4814814814814816,The ability to hypothesis testing in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Constraint Satisfaction,2,1.4814814814814816,Identifying and working with constraints to narrow down the solution space.,"- ""From $5 = m_2x$ and $x = 5b_1$, we have $5 = m_2(5b_1)$, so $1 = m_2b_1$.""
+
+Identified Skills: Backward reasoning, Forward reasoning","Consider the additive group  $\mathbb{Z}^{2}$ . Let  $H$  be the smallest subgroup containing  $(3,8), (4,-1)$  and  $(5,4)$ ."
+Spatial Reasoning,2,1.4814814814814816,The ability to spatial reasoning in mathematical problem-solving.,"The solver visualizes and reasons about geometric relationships:
+- Conceptualizing how the midline divides the trapezoid: ""The midline divides the trapezoid into two smaller trapezoids of the same height $h/2$.""
+- Understanding how a parallel segment divides areas: ""The upper region is a trapezoid with bases $b_2$ and $y$, and height $h_1$.""
+- Using similar triangles to relate segment lengths: ""Using similar triangles, we have $\frac{y - b_2}{h_1} = \frac{b_1 - b_2}{h}$""",One base of a trapezoid is $100$ units longer than the other base. The segment that joins the midpoints of the legs divides the trapezoid into two regions whose areas are in the ratio $2: 3$ . Let $x$...
+Inductive Reasoning,1,0.7407407407407408,The ability to inductive reasoning in mathematical problem-solving.,The solver attempts to generalize from specific examples to a pattern.,"Anna and Berta play a game in which they take turns in removing marbles from a table. Anna takes the first turn. When at the beginning of the turn there are  $n\geq 1$  marbles on the table, then the ..."
+Symmetry and Group Action Analysis,1,0.7407407407407408,The ability to symmetry and group action analysis in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a commutative unitary ring with an odd number of elements.
+Reformulation and Representation Transformation,1,0.7407407407407408,The ability to reformulation and representation transformation in mathematical problem-solving.,No evidence provided.,"Let  $\Sigma$  be a finite set. For  $x,y \in \Sigma^{\ast}$ , define \[x\preceq y\] if  $x$  is a sub-string (**not necessarily contiguous**) of  $y$ . For example,  $ac \preceq abc$ . We call a set ..."
+Theorem Application and Connection,1,0.7407407407407408,The ability to theorem application and connection in mathematical problem-solving.,No evidence provided.,"Let  $\Sigma$  be a finite set. For  $x,y \in \Sigma^{\ast}$ , define \[x\preceq y\] if  $x$  is a sub-string (**not necessarily contiguous**) of  $y$ . For example,  $ac \preceq abc$ . We call a set ..."
+"Counterex
+
+Identified Skills",1,0.7407407407407408,"The ability to counterex
+
+identified skills in mathematical problem-solving.",No evidence provided.,"Let  $\Sigma$  be a finite set. For  $x,y \in \Sigma^{\ast}$ , define \[x\preceq y\] if  $x$  is a sub-string (**not necessarily contiguous**) of  $y$ . For example,  $ac \preceq abc$ . We call a set ..."
+Formula Retrieval and Application,1,0.7407407407407408,The ability to recall relevant mathematical formulas and apply them appropriately to the problem context.,"""The interior angle of a regular $n$-gon is given by the formula $\frac{(n-2) \times 180^\circ}{n}$ or $(1 - \frac{2}{n}) \times 180^\circ$.""",Let $P_1^{}$ be a regular $r~\mbox{gon}$ and $P_2^{}$ be a regular $s~\mbox{gon}$ $(r\geq s\geq 3)$ such that each interior angle of $P_1^{}$ is $\frac{59}{58}$ as large as each interior angle of $P_2...
+Mathematical Integration and Calculation,1,0.7407407407407408,"The ability to perform mathematical operations, particularly calculus operations like integration, to transform expressions into more useful forms.","The solver performs a step-by-step integration:
+```
+$U = \int_{R}^{\infty} \frac{1}{2} \epsilon_0 \left( \frac{q}{4 \pi \epsilon_0 r^2} \right)^2 4 \pi r^2 dr$
+$U = \int_{R}^{\infty} \frac{1}{2} \epsilon_0 \frac{q^2}{(4 \pi \epsilon_0)^2 r^4} 4 \pi r^2 dr$
+$U = \int_{R}^{\infty} \frac{q^2}{8 \pi \epsilon_0 r^2} dr$
+$U = \frac{q^2}{8 \pi \epsilon_0} \left[ -\frac{1}{r} \right]_{R}^{\infty}$
+$U = \frac{q^2}{8 \pi \epsilon_0} \left( 0 - (-\frac{1}{R}) \right)$
+$U = \frac{q^2}{8 \pi \epsilon_0 R}$
+```","c. Assuming the radius is the value you found in part (b), how much energy is stored in the electric field of the electron? Express your answer in terms of $E_{0}=m c^{2}$ and the fine structure const..."
+Algebraic Manipulation and Simplification,1,0.7407407407407408,The ability to transform complex equations into simpler forms through step-by-step algebraic operations.,"The extensive algebraic work from ""We are given that $A_1 = \frac{59}{58} A_2$..."" through multiple steps to arrive at ""$r = \frac{116s}{118 - s}$""",Let $P_1^{}$ be a regular $r~\mbox{gon}$ and $P_2^{}$ be a regular $s~\mbox{gon}$ $(r\geq s\geq 3)$ such that each interior angle of $P_1^{}$ is $\frac{59}{58}$ as large as each interior angle of $P_2...
+Metacognitive Monitoring,1,0.7407407407407408,"Awareness and regulation of one's own thinking process, including recognizing when to check work or change approaches.","> ""This looks complicated. Let's recheck the calculations.""
+> ""The second determinant has many zeros. Let's use the property that if a row or column has many zeros, expansion along that row/column simplifies things.""","Let $|M|$ denote the determinant of a square matrix $M$. Let $g:\left[0, \frac{\pi}{2}\right] \rightarrow \mathbb{R}$ be the function defined by"
+Reformulation and Problem Representation,1,0.7407407407407408,The ability to reformulation and problem representation in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a commutative unitary ring with an odd number of elements.
+Systematic Decomposition,1,0.7407407407407408,The ability to systematic decomposition in mathematical problem-solving.,No evidence provided.,"Every group of order $5\cdot7\cdot47=1645 is abelian, and cyclic. Is this true? Answer true or false."
+Domain,1,0.7407407407407408,The ability to domain in mathematical problem-solving.,The solver applies specialized chemical knowledge throughout.,A decrease in activity in the electrophilic mononitration reaction (given that in all cases the mechanism of the reaction is the same) is observed in the sequence:
+Visual,1,0.7407407407407408,The ability to visual in mathematical problem-solving.,No evidence provided.,Complete the following reaction by considering all the given conditions.
+Dimensional Analysis,1,0.7407407407407408,The ability to dimensional analysis in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a family of proper closed subspaces of the Hilbert space  $ H\equal{}l^2$  totally ordered with respect to inclusion (that is
+Equation Reformulation and Simplification,1,0.7407407407407408,The ability to equation reformulation and simplification in mathematical problem-solving.,No evidence provided.,ii. Estimate the time $t_{2}$ needed for the radius to shrink from $r_{0}$ to $r_{2}=0.95 r_{0}$. Neglect the change of the gravity field at the position of a falling gas particle.
+Variable Substitution,1,0.7407407407407408,The ability to variable substitution in mathematical problem-solving.,No evidence provided.,ii. Estimate the time $t_{2}$ needed for the radius to shrink from $r_{0}$ to $r_{2}=0.95 r_{0}$. Neglect the change of the gravity field at the position of a falling gas particle.
+Self,1,0.7407407407407408,Actively monitoring one's problem-solving process and identifying inconsistencies or errors.,"- ""Something is wrong, the probabilities should sum to 1.""
+- ""Let's recheck the eigenvectors.""","The state $|\psi (t)>$ of a system at time t is given by the column matrix having elements (1/6, 0, 4/6). An operator P corresponding to an observable of the system is represented by the square matrix..."
+Approximation and Linearization,1,0.7407407407407408,The ability to approximation and linearization in mathematical problem-solving.,No evidence provided.,ii. Estimate the time $t_{2}$ needed for the radius to shrink from $r_{0}$ to $r_{2}=0.95 r_{0}$. Neglect the change of the gravity field at the position of a falling gas particle.
+"Integration by Substitution
+
+Identified Skills",1,0.7407407407407408,"The ability to integration by substitution
+
+identified skills in mathematical problem-solving.",No evidence provided.,ii. Estimate the time $t_{2}$ needed for the radius to shrink from $r_{0}$ to $r_{2}=0.95 r_{0}$. Neglect the change of the gravity field at the position of a falling gas particle.
+Pattern Recognition and Generalization,1,0.7407407407407408,The ability to pattern recognition and generalization in mathematical problem-solving.,No evidence provided.,"Let  $A=\{1,2,\ldots,2012\}, \: B=\{1,2,\ldots,19\}$  and  $S$  be the set of all subsets of  $A.$  Find the number of functions  $f : S\to B$  satisfying  $f(A_1\cap A_2)=\min\{f(A_1),f(A_2)\}$  for ..."
+Example Generation and Testing,1,0.7407407407407408,The ability to example generation and testing in mathematical problem-solving.,No evidence provided.,"Let  $\Sigma$  be a finite set. For  $x,y \in \Sigma^{\ast}$ , define \[x\preceq y\] if  $x$  is a sub-string (**not necessarily contiguous**) of  $y$ . For example,  $ac \preceq abc$ . We call a set ..."
+Concept Clarification and Definition Analysis,1,0.7407407407407408,The ability to concept clarification and definition analysis in mathematical problem-solving.,No evidence provided.,"Let  $\Sigma$  be a finite set. For  $x,y \in \Sigma^{\ast}$ , define \[x\preceq y\] if  $x$  is a sub-string (**not necessarily contiguous**) of  $y$ . For example,  $ac \preceq abc$ . We call a set ..."
+Case Analysis and Specialization,1,0.7407407407407408,The ability to case analysis and specialization in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a commutative unitary ring with an odd number of elements.
+Decomposition,1,0.7407407407407408,The ability to decomposition in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Semantic Network Activation,1,0.7407407407407408,The ability to semantic network activation in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Structure Decomposition,1,0.7407407407407408,The ability to structure decomposition in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a commutative unitary ring with an odd number of elements.
+Pattern Recognition in Linguistic Structures,1,0.7407407407407408,The ability to pattern recognition in linguistic structures in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Divergent Thinking,1,0.7407407407407408,The ability to divergent thinking in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Convergent Thinking,1,0.7407407407407408,The ability to convergent thinking in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Contextual Reasoning,1,0.7407407407407408,The ability to contextual reasoning in mathematical problem-solving.,No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+"Metacognitive Monitoring
+
+Identified Skills",1,0.7407407407407408,"The ability to metacognitive monitoring
+
+identified skills in mathematical problem-solving.",No evidence provided.,Solve the crossword puzzle. You are presented with a clue as input and the number of letters in brackets.
+Pattern Recognition in Equation Chains,1,0.7407407407407408,The ability to pattern recognition in equation chains in mathematical problem-solving.,No evidence provided.,"Let  $A$  be a finite ring and  $a,b \in A,$  such that  $(ab-1)b=0.$  Prove that  $b(ab-1)=0.$"
+Approximation,1,0.7407407407407408,The ability to approximation in mathematical problem-solving.,No evidence provided.,Find the ratio of forward-bias to reverse-bias currents when the same voltage 1.5 V is applied in both forward and reverse. Assume room temperature 293 K.
+Property Testing and Verification,1,0.7407407407407408,The ability to property testing and verification in mathematical problem-solving.,No evidence provided.,Let  $ A$  be a commutative unitary ring with an odd number of elements.
+Algebraic Manipulation,1,0.7407407407407408,Transforming mathematical expressions using algebraic rules to reach more useful forms.,"> ""Using cot x = cos x/sin x and log 1/x = -log x:""
+> ""D₂ = log₍ₑ₎(4/π) (cos²(θ+π/4)/sin(θ+π/4) - sin²(θ-π/4)/cos(θ-π/4))""","Let $|M|$ denote the determinant of a square matrix $M$. Let $g:\left[0, \frac{\pi}{2}\right] \rightarrow \mathbb{R}$ be the function defined by"
+Strategic Reformulation,1,0.7407407407407408,The ability to strategic reformulation in mathematical problem-solving.,No evidence provided.,Find the complex numbers  $ z$  for which the series
+Case,1,0.7407407407407408,The ability to case in mathematical problem-solving.,No evidence provided.,"Let $A$ be a $2n \times 2n$ matrix, with entries chosen independently at random. Every entry is chosen to be 0 or 1, each with probability $1/2$. Find the expected value of $\det(A-A^t)$ (as a functio..."
+Structural Analysis of Algebraic Systems,1,0.7407407407407408,The ability to structural analysis of algebraic systems in mathematical problem-solving.,No evidence provided.,"Let  $A$  be a finite ring and  $a,b \in A,$  such that  $(ab-1)b=0.$  Prove that  $b(ab-1)=0.$"
+Function,1,0.7407407407407408,The ability to function in mathematical problem-solving.,No evidence provided.,"Let  $A$  be a finite ring and  $a,b \in A,$  such that  $(ab-1)b=0.$  Prove that  $b(ab-1)=0.$"
+Proof Construction,1,0.7407407407407408,The ability to proof construction in mathematical problem-solving.,No evidence provided.,"Let be a group  $ G $  of order  $ 1+p, $  where  $ p $  is and odd prime. Show that if  $ p $  divides the number of automorphisms of  $ G, $  then  $ p\equiv 3\pmod 4. $"
